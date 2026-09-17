@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AURORA | Acessórios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html { scroll-behavior: smooth; }
+      body {
+        background: linear-gradient(180deg, #f8f5ff 0%, #f1f5f9 100%);
+      }
+      .glass {
+        background: rgba(255,255,255,0.75);
+        backdrop-filter: blur(10px);
+      }
+      .product-card {
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
+      .product-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 18px 35px rgba(79, 70, 229, 0.12);
+      }
+    </style>
+  </head>
+  <body class="text-slate-800 antialiased">
+    <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/85 backdrop-blur-md">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <a href="#top" class="text-2xl font-black tracking-[0.25em] text-violet-700">AURORA</a>
+
+        <nav class="hidden items-center gap-8 text-sm font-semibold text-slate-600 md:flex">
+          <a href="#top" class="transition hover:text-violet-700">Todos</a>
+          <a href="#formula-1" class="transition hover:text-violet-700">Fórmula 1</a>
+          <a href="#colares" class="transition hover:text-violet-700">Colares</a>
+          <a href="#colar-pulseira" class="transition hover:text-violet-700">Colar + Pulseira</a>
+          <a href="#pulseiras" class="transition hover:text-violet-700">Pulseiras</a>
+        </nav>
+
+        <button class="rounded-full bg-violet-700 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-violet-200 transition hover:bg-violet-800">
+          Carrinho (3)
+        </button>
+      </div>
+    </header>
+
+    <main id="top" class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+      <section class="mb-16 overflow-hidden rounded-[2rem] bg-gradient-to-r from-violet-700 via-indigo-700 to-fuchsia-600 p-8 text-white shadow-2xl shadow-violet-200 md:p-12">
+        <div class="grid items-center gap-8 md:grid-cols-2">
+          <div>
+            <p class="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-violet-100">Coleção nova</p>
+            <h1 class="max-w-xl text-4xl font-black leading-tight md:text-6xl">Acessórios que combinam estilo e personalidade.</h1>
+            <p class="mt-5 max-w-lg text-base text-violet-100 md:text-lg">
+              Descubra peças exclusivas em F1, colares, pulseiras e combinações elegantes para o seu dia a dia.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a href="#formula-1" class="rounded-full bg-white px-6 py-3 font-semibold text-violet-700 transition hover:bg-violet-50">Ver coleção</a>
+              <a href="#colares" class="rounded-full border border-white/50 px-6 py-3 font-semibold text-white transition hover:bg-white/10">Ver preços</a>
+            </div>
+          </div>
+
+          <div class="rounded-[2rem] border border-white/20 bg-white/10 p-3 shadow-2xl backdrop-blur-sm">
+            <img
+              src="https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=900&q=80"
+              alt="Acessórios elegantes"
+              class="h-[420px] w-full rounded-[1.5rem] object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="formula-1" class="mb-20">
+        <div class="mb-6 flex items-end justify-between gap-4">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-violet-600">Seção</p>
+            <h2 class="text-3xl font-black text-slate-900">Fórmula 1</h2>
+          </div>
+          <span class="rounded-full bg-violet-100 px-3 py-1 text-sm font-semibold text-violet-700">2 itens</span>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <article class="product-card overflow-hidden rounded-3xl border border-slate-200 bg-white">
+            <img src="https://acdn-us.mitiendanube.com/stores/001/254/598/products/img_7923-1-58d9c5b015b0766aa017205459939385-480-0.webp" alt="Pulseira Fórmula 1" class="h-72 w-full object-cover" />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-slate-900">Pulseira Fórmula 1</h3>
+              <p class="mt-2 text-sm text-slate-500">Estilo moderno e confortável para o dia a dia.</p>
+              <div class="mt-5 flex items-center justify-between">
+                <span class="text-2xl font-black text-violet-700">R$ 129,90</span>
+                <button class="rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-violet-700">Comprar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card overflow-hidden rounded-3xl border border-slate-200 bg-white">
+            <img src="https://s.alicdn.com/@sc04/kf/Hc44af274130b43b1bf3d6b3e91af8a7aw/BD-D951-Wholesale-Cubic-Zircon-F1-Racing-Car-Pendant-Charms-Chain-Necklace-18K-Gold-Jewelry.jpg" alt="Colar Fórmula 1" class="h-72 w-full object-cover" />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-slate-900">Colar Fórmula 1</h3>
+              <p class="mt-2 text-sm text-slate-500">Detalhe premium com acabamento metalizado.</p>
+              <div class="mt-5 flex items-center justify-between">
+                <span class="text-2xl font-black text-violet-700">R$ 149,90</span>
+                <button class="rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-violet-700">Comprar</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="colares" class="mb-20">
+        <div class="mb-6 flex items-end justify-between gap-4">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-violet-600">Seção</p>
+            <h2 class="text-3xl font-black text-slate-900">Colares</h2>
+          </div>
+          <span class="rounded-full bg-violet-100 px-3 py-1 text-sm font-semibold text-violet-700">4 itens</span>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <article class="product-card overflow-hidden rounded-3xl border border-slate-200 bg-white">
+            <img src="https://thumb.braavo.me/trudys/0/193314739.webp" alt="Colar dourado" class="h-64 w-full object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-slate-900">Colar Dourado</h3>
+              <p class="mt-2 text-sm text-slate-500">Elegância com brilho sofisticado.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-xl font-black text-violet-700">R$ 89,90</span>
+                <button class="rounded-full bg-slate-900 px-3 py-2 text-xs font-semibold text-white hover:bg-violet-700">Comprar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card overflow-hidden rounded-3xl border border-slate-200 bg-white">
+            <img src="https://images.tcdn.com.br/img/img_prod/1149535/90_choker_biponta_de_pedra_natural_manu_49_6_0a5a173fe91262a75762f5239f576a1c.jpg" alt="Colar cristal" class="h-64 w-full object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-slate-900">Colar Cristal</h3>
+              <p class="mt-2 text-sm text-slate-500">Brilho delicado para qualquer produção.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-xl font-black text-violet-700">R$ 99,90</span>
+                <button class="rounded-full bg-slate-900 px-3 py-2 text-xs font-semibold text-white hover:bg-violet-700">Comprar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card overflow-hidden rounded-3xl border border-slate-200 bg-white">
+            <img src="https://montezza.com.br/cdn/shop/files/IMG_2208_f7f4a82e-c0c7-417a-a16c-1ee20d0fd32a.jpg?v=1713632591" alt="Colar com pingente" class="h-64 w-full object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-slate-900">Pingente Luxo</h3>
+              <p class="mt-2 text-sm text-slate-500">Acabamento refinado para uso diário.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-xl font-black text-violet-700">R$ 119,90</span>
+                <button class="rounded-full bg-slate-900 px-3 py-2 text-xs font-semibold text-white hover:bg-violet-700">Comprar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card overflow-hidden rounded-3xl border border-slate-200 bg-white">
+            <img src="https://images.tcdn.com.br/img/img_prod/1329818/colar_prata_925_pingente_sol_espiral_12303_2_e0662bd63cb2ff8eebafbcf4fd1a0a1d.jpg" alt="Colar em prata" class="h-64 w-full object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-slate-900">Colar Prata</h3>
+              <p class="mt-2 text-sm text-slate-500">Minimalista, moderna e sofisticada.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-xl font-black text-violet-700">R$ 109,90</span>
+                <button class="rounded-full bg-slate-900 px-3 py-2 text-xs font-semibold text-white hover:bg-violet-700">Comprar</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="colar-pulseira" class="mb-20">
+        <div class="mb-6 flex items-end justify-between gap-4">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-violet-600">Seção</p>
+            <h2 class="text-3xl font-black text-slate-900">Colar + Pulseira</h2>
+          </div>
+          <span class="rounded-full bg-violet-100 px-3 py-1 text-sm font-semibold text-violet-700">3 itens</span>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-3">
+          <article class="product-card overflow-hidden rounded-3xl border border-slate-200 bg-white">
+            <img src="https://www.aquajoias.com.br/upload/produto/imagem/b_anel-de-ouro-18k-solit-rio-com-diamante.jpg" alt="Set colar e pulseira dourada" class="h-72 w-full object-cover" />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-slate-900">Dourado Premium</h3>
+              <p class="mt-2 text-sm text-slate-500">Conjunto elegante para ocasiões especiais.</p>
+              <div class="mt-5 flex items-center justify-between">
+                <span class="text-2xl font-black text-violet-700">R$ 179,90</span>
+                <button class="rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white hover:bg-violet-700">Comprar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card overflow-hidden rounded-3xl border border-slate-200 bg-white">
+            <img src="https://images.tcdn.com.br/img/img_prod/1329818/pulseira_prata_925_bolinhas_e_pingente_crucifixo_2_20250910093746_9649945e979a.jpg" alt="Set colar e pulseira delicada" class="h-72 w-full object-cover" />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-slate-900">Delicadeza em Prata</h3>
+              <p class="mt-2 text-sm text-slate-500">Visual leve com acabamento sofisticado.</p>
+              <div class="mt-5 flex items-center justify-between">
+                <span class="text-2xl font-black text-violet-700">R$ 169,90</span>
+                <button class="rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white hover:bg-violet-700">Comprar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card overflow-hidden rounded-3xl border border-slate-200 bg-white">
+            <img src="https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?auto=format&fit=crop&w=900&q=80" alt="Set colar e pulseira feminina" class="h-72 w-full object-cover" />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-slate-900">Feminino Charm</h3>
+              <p class="mt-2 text-sm text-slate-500">Combinação clássica, moderna e versátil.</p>
+              <div class="mt-5 flex items-center justify-between">
+                <span class="text-2xl font-black text-violet-700">R$ 189,90</span>
+                <button class="rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white hover:bg-violet-700">Comprar</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="pulseiras" class="mb-20">
+        <div class="mb-6 flex items-end justify-between gap-4">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-violet-600">Seção</p>
+            <h2 class="text-3xl font-black text-slate-900">Pulseiras</h2>
+          </div>
+          <span class="rounded-full bg-violet-100 px-3 py-1 text-sm font-semibold text-violet-700">4 itens</span>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <article class="product-card overflow-hidden rounded-3xl border border-slate-200 bg-white">
+            <img src="https://images.tcdn.com.br/img/img_prod/1182133/pulseira_feminina_prata_925_flor_branca_1_20250926120505_1e414f07b3a6.jpg" alt="Pulseira minimalista em metal" class="h-64 w-full object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-slate-900">Pulseira Minimalista</h3>
+              <p class="mt-2 text-sm text-slate-500">Leve, sofisticada e prática.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-xl font-black text-violet-700">R$ 69,90</span>
+                <button class="rounded-full bg-slate-900 px-3 py-2 text-xs font-semibold text-white hover:bg-violet-700">Comprar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card overflow-hidden rounded-3xl border border-slate-200 bg-white">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_645621-MLB111907047221_052026-O-pulseira-boho-chic-de-amarrar-pedra-natural-linda-energia.webp" alt="Pulseira boho charm" class="h-64 w-full object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-slate-900">Pulseira Boho Charm</h3>
+              <p class="mt-2 text-sm text-slate-500">Detalhes com estilo casual e leve.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-xl font-black text-violet-700">R$ 79,90</span>
+                <button class="rounded-full bg-slate-900 px-3 py-2 text-xs font-semibold text-white hover:bg-violet-700">Comprar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card overflow-hidden rounded-3xl border border-slate-200 bg-white">
+            <img src="https://images.tcdn.com.br/img/img_prod/1331283/pulseira_feminina_bolinha_elo_coracao_elo_portugues_prata925_613_1_dfd8db823b7212b6122ed8f0f81a909d.jpeg" alt="Pulseira em prata clássica" class="h-64 w-full object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-slate-900">Pulseira Prata Clássica</h3>
+              <p class="mt-2 text-sm text-slate-500">Versátil para uso no dia a dia.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-xl font-black text-violet-700">R$ 84,90</span>
+                <button class="rounded-full bg-slate-900 px-3 py-2 text-xs font-semibold text-white hover:bg-violet-700">Comprar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card overflow-hidden rounded-3xl border border-slate-200 bg-white">
+            <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=900&q=80" alt="Pulseira luxo glow" class="h-64 w-full object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-slate-900">Pulseira Luxo Glow</h3>
+              <p class="mt-2 text-sm text-slate-500">Brilho intenso para looks premium.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-xl font-black text-violet-700">R$ 99,90</span>
+                <button class="rounded-full bg-slate-900 px-3 py-2 text-xs font-semibold text-white hover:bg-violet-700">Comprar</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white">
+      <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-6 text-center text-sm text-slate-500 sm:px-6 lg:flex-row lg:text-left lg:px-8">
+        <p>© 2026 Aurora Acessórios. Todos os direitos reservados.</p>
+        <p>Loja especializada em acessórios modernos.</p>
+      </div>
+    </footer>
+  </body>
+</html>
